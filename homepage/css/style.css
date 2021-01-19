@@ -1,0 +1,186 @@
+/*
+Specificity
+1. Inline
+2. ID
+3. Class
+4. Type
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #00c864;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  line-height: 50px;
+}
+
+nav ul li {
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-style: Italic;
+  font-size: 20px;
+}
+
+nav ul li a {
+  width: 120px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+nav ul li:hover {
+  background-color: azure;
+}
+
+.selPage {
+  background-color: azure;
+}
+
+.selPage a {
+  color: #000;
+}
+
+header {
+  margin-top: 60px;
+}
+
+header h1 {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  line-height: 70px;
+  border-style: dotted;
+  border-radius: 12px;
+  border-width: thick;
+}
+
+header img {
+  margin-top: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+form {
+  margin-top: 10px;
+  display: block;
+  font-size: 15px;
+}
+
+form label,
+form input {
+  display: block;
+  margin: 5px auto;
+}
+
+form label {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+form input {
+  font-size: 1.2em;
+  padding: 5px;
+  width: 10%;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+form input[type="text"] {
+  background-color: #66ffff;
+}
+
+form input[type="text"]:focus {
+  width: 20%;
+}
+
+form input[type="number"] {
+  background-color: #e6e600;
+}
+
+form input[type="number"]:focus {
+  width: 20%;
+}
+
+form input[type="submit"] {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+form select {
+  padding: 5px;
+  font-size: inherit;
+  background-color: #0064c8;
+  color: #fff;
+}
+
+form select option[value="yes"] {
+  background-color: green;
+}
+
+form select option[value="no"] {
+  background-color: red;
+}
+
+aside {
+  font-family: Times;
+  font-size: 1.5em;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: opacity 0.8s ease-in;
+  transition: opacity 0.8s ease-in;
+  width: 70%;
+  word-wrap: keep-all;
+}
+
+.active {
+  display: inline-block;
+  opacity: 1;
+  height: auto;
+}
+
+footer {
+  margin: 10px auto;
+}
+
+table,
+th,
+td {
+  margin: 10px auto;
+  padding: 15px;
+  text-align: center;
+  border: 3px solid #2600ff;
+  border-collapse: collapse;
+  font-family: Times;
+  font-size: 1.2em;
+}
+
+#resultPool1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Family Members</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script defer src="../javascripts/changeImage.js"></script>
+    <script defer src="../javascripts/display.js"></script>
+  </head>
+  <body onload="setNewImage(famImageShow)">
+    <nav>
+      <ul>
+        <li><a href="index.html">Basic Information</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
+        <li class="selPage"><a href="fam.html">Family Members</a></li>
+        <li><a href="occ.html">Occupation</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Your Family Members' Age</h1>
+      <img
+        src="../imgs/7.jpg"
+        width="500"
+        id="data"
+        alt="fam Photos"
+      />
+    </header>
+
+    <form id="famForm">
+      <label for="GD_age">How old is your Grandfather?</label>
+      <input type="number" id="GD_age" />
+      <label for="GM_age">How old is your Grandmother?</label>
+      <input type="number" id="GM_age" />
+      <label for="dad_age">How old is your Dad?</label>
+      <input type="number" id="dad_age" />
+      <label for="mum_age">How old is your Mum?</label>
+      <input type="number" id="mum_age" />
+      <label for="my_age">Lastly, how old are you?</label>
+      <input type="number" id="my_age" />
+      <input type="submit" value="Submit Form">
+    </form>
+
+    <aside>
+      <div class="display" id="GD_diff"></div>
+      <div class="display" id="GM_diff"></div>
+      <div class="display" id="dad_diff"></div>
+      <div class="display" id="mum_diff"></div>
+      <div class="display" id="my_diff"></div>
+    </aside>
+
+    <footer>&#169 2020 Lee Shao Wee Some Rights Reserved</footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Your Occupation</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script defer src="../javascripts/changeImage.js"></script>
+    <script defer src="../javascripts/display.js"></script>
+  </head>
+  <body onload="setNewImage(occImageShow)">
+    <nav>
+      <ul>
+        <li><a href="index.html">Basic Information</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
+        <li><a href="fam.html">Family Members</a></li>
+        <li class="selPage"><a href="occ.html">Occupation</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Occupation</h1>
+      <img src="../imgs/10.jpg" width="550" id="data" alt="Occ Photos" />
+      <h2>Employment Status</h2>
+    </header>
+    <form id="occForm">
+      <label for="emp_status"
+        >Pick one of the category that best describes you.</label
+      >
+      <select id="emp_status">
+        <option value="self_emp">Self-Employed</option>
+        <option value="emp">Employee</option>
+        <option value="wker">Worker</option>
+        <option value="unemp">Unemployed</option>
+      </select>
+      <input type="submit" value="Submit Form" />
+    </form>
+    <aside>
+      <div id="empResult"></div>
+    </aside>
+    <footer>© 2020 Lee Shao Wee Some Rights Reserved</footer>
+  </body>
+</html>

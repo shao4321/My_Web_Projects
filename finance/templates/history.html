@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <h1>Stocks Transactions</h1>
+    <table id="portfolio">
+    <tr>
+        <th>Symbol</th>
+        <th>Name</th>
+        <th>Shares(Bought/Sold)</th>
+        <th>Price</th>
+        <th>Transacted On</th>
+    </tr>
+    {% for row in rows_transac %}
+    <tr>
+        <td>{{ row["symbol"] }}</td>
+        <td>{{ row["name"] }}</td>
+        <td>{{ row["shares"] }}</td>
+        <td>${{ row["price"] }}</td>
+        <td>{{ row["dates"] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+    <h1>Cash Transactions</h1>
+    <table id="portfolio">
+    <tr>
+        <th>Activity</th>
+        <th>Cash Amount</th>
+        <th>Cash Balance</th>
+        <th>Transacted On</th>
+    </tr>
+    {% for row in rows_cashtransac %}
+    <tr>
+        <td>{{ row["activity"] }}</td>
+        <td>${{ row["amount"]|round(2,'floor') }}</td>
+        <td>${{ row["usercash"]|round(2,'floor') }}</td>
+        <td>{{ row["dates"] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

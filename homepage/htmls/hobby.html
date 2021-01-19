@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Your Hobbies</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script defer src="../javascripts/changeImage.js"></script>
+    <script defer src="../javascripts/display.js"></script>
+  </head>
+  <body onload="setNewImage(hobbyImageShow)">
+    <nav>
+      <ul>
+        <li><a href="index.html">Basic Information</a></li>
+        <li class="selPage"><a href="hobby.html">Hobbies</a></li>
+        <li><a href="fam.html">Family Members</a></li>
+        <li><a href="occ.html">Occupation</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Things you like to do</h1>
+      <img src="../imgs/4.jpg" id="data" alt="Hobby Photos" />
+    </header>
+
+    <form id="hobbyForm">
+      <label for="enjoy">What do you enjoy doing?</label>
+      <input type="text" id="enjoy" />
+      <label for="sport">What is your favourite sport?</label>
+      <input type="text" id="sport" />
+      <label for="choice">Do you like to play pool?</label>
+      <select id="choice">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <label for="color">What is your favourite color?</label>
+      <input type="color" id="color" />
+      <input type="submit" value="Submit Form" />
+    </form>
+
+    <table>
+      <tr>
+        <th>Enjoying Doing</th>
+        <th>Favourite Sports</th>
+        <th>Interest in Pool</th>
+        <th>Your Fav Color Code (In HEX & In RGBA)</th>
+      </tr>
+      <tr>
+        <td><div class="pending" id="resultEnjoy">Pending</div></td>
+        <td><div class="pending" id="resultSport">Pending</div></td>
+        <td><div class="pending" id="resultPool2">Pending</div></td>
+        <td>
+          <div class="pending"id="resultColor1">Pending</div>
+          <div id="resultColor2"></div>
+        </td>
+      </tr>
+    </table>
+
+    <div id="resultPool1"></div>
+    <footer>&#169 2020 Lee Shao Wee Some Rights Reserved</footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/*
+Specificity
+1. Inline
+2. ID
+3. Class
+4. Type
+*/
+
+body {
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.menu-bar {
+  font-family: sans-serif;
+  background: rgb(0, 200, 100);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  font-style: Italic;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+h1 {
+  border-style: dotted;
+  border-radius: 12px;
+  border-width: thick;
+  height: 70px;
+  width: 100%;
+}
+h2 {
+  text-decoration: underline;
+}
+form {
+  margin-top: 5px;
+}
+aside {
+  font-family: Times;
+  font-size: 20px;
+}
+table,
+th,
+td {
+  text-align: center;
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding: 15px;
+  font-family: Times;
+  font-size: 20px;
+}
+input[type="text"] {
+  background-color: #66ffff;
+  color: black;
+  transition: width 0.8s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 20%;
+}
+
+input[type="number"] {
+  background-color: #e6e600;
+  color: black;
+  transition: width 0.8s ease-in-out;
+}
+
+input[type="number"]:focus {
+  width: 20%;
+}
+.display {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: ridge;
+}

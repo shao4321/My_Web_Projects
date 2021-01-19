@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cash Out
+{% endblock %}
+
+{% block main %}
+    <form action="/withdraw" method="post">
+        <div class="form-group">
+            <input class="form-control" name="withdraw" placeholder="Withdrawal Amount($)" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Cash Out</button>
+    </form>
+{% endblock %}
