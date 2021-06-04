@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-left: 1.2em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#navbar h2,
+#navbar header {
+  text-align: center;
+  padding: 0.5em 0;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+#navbar header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#navbar #nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 12em;
+  overflow-y: auto;
+  border-bottom: 2px solid black;
+}
+
+#navbar #nav-container a {
+  text-transform: capitalize;
+}
+
+#navbar #nav-container .nav-link {
+  padding: 1.2rem 1.2em;
+  font-size: 1.125rem;
+  color: #000;
+  border-bottom: 0.5px solid black;
+  text-decoration: none;
+}
+
+#main-doc {
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-doc .main-section {
+  height: auto;
+}
+
+#main-doc .main-section p {
+  margin: 1.2rem 3em;
+}
+
+#main-doc .main-section ul {
+  margin: 0 5em;
+}
+
+#main-doc .main-section ul li {
+  margin: 1.2rem auto;
+}
+
+#main-doc .main-section code {
+  display: block;
+  width: 80%;
+  margin: 1.2rem auto;
+  background-color: lightgray;
+  padding: 0.75em 1em;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 816px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid grey;
+  }
+  #navbar #nav-container {
+    border: none;
+    height: 100%;
+  }
+  #navbar #nav-container .nav-link {
+    border: none;
+    border-bottom: 0.5px solid black;
+  }
+  #main-doc {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

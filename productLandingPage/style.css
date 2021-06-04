@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav img {
+  height: 2em;
+}
+
+header nav ul {
+  padding: 2em;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 1rem;
+  padding-left: 2em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+  margin: 1em auto;
+  padding: 0.5em;
+  text-transform: uppercase;
+  width: 40%;
+  background-color: #dfff00;
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #ffbf00;
+}
+
+form {
+  margin-top: 90px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form h2,
+form input,
+form input[type="submit"] {
+  margin-top: 15px;
+}
+
+form h2,
+form input {
+  width: 60%;
+}
+
+form input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+#section {
+  margin-top: 50px;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eee;
+}
+
+#section article {
+  margin-top: 30px;
+  padding-left: 200px;
+}
+
+#section article .img-content {
+  float: left;
+  width: 100px;
+  height: 80px;
+  padding-right: 100px;
+}
+
+#section article .img-content::after {
+  content: "";
+  clear: both;
+  display: table;
+  line-height: 100%;
+}
+
+iframe {
+  display: block;
+  margin: 2em auto;
+  width: 735px;
+  height: 20em;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+main .item {
+  width: 25%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+main .item h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #eee;
+  padding: 0.5em 0;
+  line-height: auto;
+}
+
+main .item .price {
+  font-size: 1.5rem;
+  padding: 0.5em 0;
+}
+
+main .item ul li {
+  list-style-type: none;
+  font-size: 0.9rem;
+  padding: 0.5em 0;
+}
+
+main .item button {
+  font-weight: 500;
+  border-radius: 1em;
+}
+
+footer {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 1em;
+  width: 86%;
+  text-align: right;
+  background-color: #eee;
+}
+
+footer ul {
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-right: 1em;
+  font-size: 1rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: grey;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+    padding-top: 1em;
+    text-align: center;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 0.3em 0;
+    padding: 0;
+  }
+  #section {
+    text-align: center;
+  }
+  #section article {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #section .img-content {
+    display: none;
+  }
+  button {
+    width: 90%;
+  }
+  iframe {
+    width: 98%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

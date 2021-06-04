@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <img
+          src="images/original_trombones.png"
+          alt="original_trombones"
+          id="header-img"
+        />
+        <ul>
+          <li><a href="#section" class="nav-link">Features</a></li>
+          <li><a href="#video" class="nav-link">How It Works</a></li>
+          <li><a href="#main" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form
+      id="form"
+      target="_blank"
+      action="https://www.freecodecamp.com/email-submit"
+      method="post"
+    >
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email address"
+        pattern=".+@[A-Za-z]+\.com(\.[A-Za-z]+)*"
+      />
+      <input type="submit" id="submit" value="get started" />
+    </form>
+    <div id="section">
+      <article>
+        <img
+          src="images/premiumMat.png"
+          alt="premium material"
+          class="img-content"
+        />
+        <h2>Premium Materials</h2>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </article>
+      <article>
+        <img src="images/shipping.png" alt="shipping" class="img-content" />
+        <h2>Fast Shipping</h2>
+        <p>
+          We make sure you receive your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </article>
+      <article>
+        <img src="images/qa.png" alt="quality" class="img-content" />
+        <h2>Quality Assurance</h2>
+        <p>
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the pitch of your instrument.
+        </p>
+      </article>
+    </div>
+    <iframe
+      src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+      id="video"
+      allowfullscreen
+    ></iframe>
+    <main id="main">
+      <div class="item">
+        <h3>tenor trombone</h3>
+        <div>
+          <div class="price">$600</div>
+          <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.</li>
+          </ul>
+          <button id="select-1">select</button>
+        </div>
+      </div>
+      <div class="item">
+        <h3>bass trombone</h3>
+        <div>
+          <div class="price">$900</div>
+          <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.</li>
+          </ul>
+          <button id="select-2">select</button>
+        </div>
+      </div>
+      <div class="item">
+        <h3>valve trombone</h3>
+        <div>
+          <div class="price">$1200</div>
+          <ul>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.</li>
+          </ul>
+          <button id="select-3">select</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+      const submitBtn = document.getElementById("submit");
+
+      submitBtn.addEventListener("click", function () {
+        window.location.href = "https://www.freecodecamp.com/email-submit";
+      });
+    </script>
+  </body>
+</html>

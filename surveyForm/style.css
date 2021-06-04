@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title,
+#description {
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+#survey-form {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  border-radius: 5px;
+  background-color: rgba(27, 27, 50, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#survey-form p,
+#survey-form label,
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form select,
+#survey-form textarea {
+  width: 100%;
+  height: 40px;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+#survey-form input {
+  padding-left: 5px;
+}
+
+#survey-form p {
+  height: auto;
+}
+
+#survey-form div,
+#survey-form button {
+  margin: 0 10%;
+}
+
+#survey-form #radio,
+#survey-form #checkboxes {
+  margin: 0;
+}
+
+#survey-form button {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #37af65;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+#survey-form button:hover {
+  background-color: #000;
+}
+
+textarea {
+  height: 150px;
+  min-height: 120px;
+  resize: vertical;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #survey-form {
+    width: 70%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

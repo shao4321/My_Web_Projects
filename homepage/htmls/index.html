@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>About Yourself</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script defer src="../javascripts/changeImage.js"></script>
+    <script defer src="../javascripts/display.js"></script>
+  </head>
+  <body onload="setNewImage(indexImageShow)">
+    <nav>
+      <ul>
+        <li class="selPage"><a href="index.html">Basic Information</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
+        <li><a href="fam.html">Family Members</a></li>
+        <li><a href="occ.html">Occupation</a></li>
+      </ul>
+    </nav>
+<header>
+      <h1>Basic Information</h1>
+      <img src="../imgs/1.jpg" id="data" alt="Self Photos" />
+    </header>
+    <form id="indexForm">
+      <label for="name">What is your name?</label>
+      <input type="text" id="name">
+      <label for="nationality">Where are you from?</label>
+      <input type="text" id="nationality">
+      <label for="age">How old are you?</label>
+      <input type="number" id="age">
+      <label for="bday">When is your birthday?</label>
+      <input type="date" id="bday">
+      <input type="submit" value="Submit Form">
+    </form>
+    <aside>
+      <div id="resultName"></div>
+      <div id="resultNatAge"></div>
+      <div id="resultBday"></div>
+    </aside>
+    <footer>&#169 2020 Lee Shao Wee Some Rights Reserved</footer>
+  </body>
+</html>

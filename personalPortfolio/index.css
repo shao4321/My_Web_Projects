@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+#navbar .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  background-color: aqua;
+}
+
+#navbar li {
+  list-style-type: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#navbar li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#navbar li a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container section {
+  width: 100%;
+  text-align: center;
+}
+
+.container .images {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container img {
+  width: 50%;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #fff;
+  padding: 2em;
+  font-family: "Roboto Mono", monospace;
+}
+
+#welcome-section p {
+  font-size: 1.125rem;
+}
+
+#welcome-section .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projects {
+  background-color: rgba(200, 50, 100, 0.5);
+  padding: 2em;
+}
+
+#projects .project-tile {
+  margin: 2em auto;
+  width: 100%;
+}
+
+#projects .project-tile a img {
+  width: 60%;
+  min-width: 50%;
+}
+
+#projects .project-tile a p {
+  display: inline;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  background-color: #2f3dbb;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  -webkit-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+#projects .project-tile a p:hover {
+  font-size: 1.5rem;
+}
+
+#projects .btn-show {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 0.5em;
+  width: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#projects .btn-show a {
+  padding: 1em;
+}
+
+#projects .btn-show:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#contact {
+  background-color: rgba(27, 27, 50, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 20vh;
+}
+
+#contact h1 {
+  color: #c8c8c8;
+}
+
+#contact .contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contact .contact-links a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  color: lightblue;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#contact .contact-links a:hover {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .images img {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

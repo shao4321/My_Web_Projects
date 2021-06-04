@@ -1,9 +1,9 @@
 let start = 1;
 let image_num = 0;
 
-// let setNewImage = (changeImgWay) => {
-//   setInterval(changeImgWay, 2000);
-// };
+let setNewImage = (changeImgWay) => {
+  setInterval(changeImgWay, 2000);
+};
 
 let changeImgHelper = (image_num) => {
   var image_data = `../imgs/${image_num}.jpg`;
